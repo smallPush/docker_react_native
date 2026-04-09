@@ -1,4 +1,4 @@
-.PHONY: build up down shell init start
+.PHONY: build up down shell init start web
 
 build:
 	docker compose build
@@ -17,3 +17,6 @@ init:
 
 start:
 	docker compose exec expo npx expo start
+
+web:
+	docker compose exec expo npx expo start --web
